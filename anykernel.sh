@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Linux Kernel by Minerva @ github.com
+kernel.string=Linux Kernel by Minerva
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -44,7 +44,7 @@ dump_boot;
 
 # begin ramdisk changes
 # Remove old kernel stuffs from ramdisk
-ui_print "cleaning up..."
+ui_print "cleaning up ramdisk....";
 rm -rf $ramdisk/*.sh
 rm -rf $ramdisk/*.rc
 
@@ -69,15 +69,12 @@ replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl c
 write_boot;
 ## end boot install
 
-
 # shell variables
 #block=vendor_boot;
 #is_slot_device=1;
-ramdisk_compression=auto;
 
 # reset for vendor_boot patching
 #reset_ak;
-
 
 ## AnyKernel vendor_boot install
 #split_boot; # skip unpack/repack ramdisk since we don't need vendor_ramdisk access
