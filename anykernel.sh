@@ -49,8 +49,8 @@ rm -rf $ramdisk/*.sh
 rm -rf $ramdisk/*.rc
 
 # init.rc
-backup_file init.rc;
-replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl cpu" "mount cgroup none /dev/cpuctl cpu,timer_slack";
+# backup_file init.rc;
+# replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl cpu" "mount cgroup none /dev/cpuctl cpu,timer_slack";
 
 # init.tuna.rc
 # backup_file init.tuna.rc;
