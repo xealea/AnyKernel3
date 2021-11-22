@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Linux Kernel by Minerva
+kernel.string=Flashing Kernel
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -15,7 +15,7 @@ device.name2=X00TD
 device.name3=x00t
 device.name4=x00td
 device.name5=
-supported.versions=10
+supported.versions=11
 supported.patchlevels=
 '; } # end properties
 
