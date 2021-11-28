@@ -15,7 +15,7 @@ device.name2=X00TD
 device.name3=x00t
 device.name4=x00td
 device.name5=
-supported.versions=12
+supported.versions=
 supported.patchlevels=
 '; } # end properties
 
