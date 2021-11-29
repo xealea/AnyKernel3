@@ -472,8 +472,8 @@ if [ -f version ]; then
   ui_print " ";
 fi;
 
-ui_print " " " █▀▄▀█ █ █▄░█ █▀▀ █▀█ █░█ ▄▀█ " " ";
-ui_print " " " █░▀░█ █ █░▀█ ██▄ █▀▄ ▀▄▀ █▀█ " " ";
+ui_print " " █▀▄▀█ █ █▄░█ █▀▀ █▀█ █░█ ▄▀█ " ";
+ui_print " " █░▀░█ █ █░▀█ ██▄ █▀▄ ▀▄▀ █▀█ " ";
 ui_print " " "       Built By @vcyzteen     " " ";
 ui_print " ";
 ui_print " " "AK3 by osm0sis @ xda-developer" " ";
