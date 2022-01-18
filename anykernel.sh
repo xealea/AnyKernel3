@@ -45,8 +45,35 @@ dump_boot;
 # begin ramdisk changes
 # Remove old kernel stuffs from ramdisk
 ui_print "cleaning up ramdisk....";
+sleep 0.5
 rm -rf $ramdisk/*.sh
 rm -rf $ramdisk/*.rc
+
+ui_print "Tweaked....."
+sleep 0.5
+setprop debug.composition.type=c2d
+setprop debug.composition.type=gpu
+setprop debug.enabletr=true
+setprop debug.overlayui.enable=1
+setprop debug.performance.tuning=1
+setprop hw3d.force=1
+setprop hwui.disable_vsync=true
+setprop hwui.render_dirty_regions=false
+setprop persist.sys.composition.type=c2d
+setprop persist.sys.composition.type=gpu
+setprop persist.sys.ui.hw=1
+setprop ro.config.enable.hw_accel=true
+setprop ro.product.gpu.driver=1
+setprop ro.fb.mode=1
+setprop ro.sf.compbypass.enable=0
+setprop video.accelerate.hw=1
+setprop debug.egl.hw=0
+setprop debug.gralloc.gfx_ubwc_disable=0
+setprop debug.mdpcomp.logs=0
+setprop persist.vendor.color.matrix=2
+setprop vendor.gralloc.disable_ubwc=0
+setprop ro.vendor.qti.sys.fw.bg_apps_limit=120
+setprop ro.vendor.qti.sys.fw.bservice_enable=true
 
 # init.rc
 # backup_file init.rc;
