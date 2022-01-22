@@ -45,12 +45,12 @@ dump_boot;
 # begin ramdisk changes
 # Remove old kernel stuffs from ramdisk
 ui_print "cleaning up ramdisk....";
-sleep 0.5
+sleep 5
 rm -rf $ramdisk/*.sh
 rm -rf $ramdisk/*.rc
 
 ui_print "Tweaked....."
-sleep 0.5
+sleep 5
 setprop debug.composition.type=c2d
 setprop debug.composition.type=gpu
 setprop debug.enabletr=true
