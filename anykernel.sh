@@ -74,6 +74,8 @@ setprop persist.vendor.color.matrix=2
 setprop vendor.gralloc.disable_ubwc=0
 setprop ro.vendor.qti.sys.fw.bg_apps_limit=120
 setprop ro.vendor.qti.sys.fw.bservice_enable=true
+setprop ro.media.recorder-max-base-layer-fps = 60
+setprop ro.charger.enable_suspend = 1
 
 # init.rc
 # backup_file init.rc;
