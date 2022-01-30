@@ -51,6 +51,10 @@ rm -rf $ramdisk/*.rc
 
 ui_print "Tweaked....."
 sleep 5
+setprop ro.ril.enable.amr.wideband=1
+setprop persist.cust.tel.eons=1
+setprop persist.camera.HAL3.enabled=1
+setprop persist.camera.eis.enable=1
 setprop debug.composition.type=c2d
 setprop debug.composition.type=gpu
 setprop debug.enabletr=true
@@ -74,8 +78,34 @@ setprop persist.vendor.color.matrix=2
 setprop vendor.gralloc.disable_ubwc=0
 setprop ro.vendor.qti.sys.fw.bg_apps_limit=120
 setprop ro.vendor.qti.sys.fw.bservice_enable=true
-setprop ro.media.recorder-max-base-layer-fps = 60
-setprop ro.charger.enable_suspend = 1
+setprop ro.media.recorder-max-base-layer-fps=60
+setprop ro.charger.enable_suspend= 1
+setprop ro.product.model=Mi 10 Pro
+setprop wifi.supplicant_scan_interval=360
+setprop ro.config.nocheckin=1
+setprop logcat.live=disable
+setprop profiler.force_disable_err_rpt=1
+setprop profiler.force_disable_ulog=1
+setprop ro.kernel.android.checkjni=0
+setprop ro.kernel.checkjni=0
+setprop persist.timed.enable=true
+setprop persist.service.zram=0
+setprop net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+setprop net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+setprop net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+setprop net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+setprop net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+setprop net.rmnet0.dns1=1.1.1.1
+setprop net.rmnet0.dns2=1.0.0.1
+setprop net.dns1=1.1.1.1
+setprol net.dns2=1.0.0.1
+setprop ro.config.hw_fast_dormancy=1
+setprop windowsmgr.max_events_per_sec=150
+setprop ro.min_pointer_dur=8
+setprop ro.max.fling_velocity=12000
+setprop ro.min.fling_velocity=8000
+setprop persist.sys.scrollingcache=3
+setprop debug.sf.hw=1
 
 # init.rc
 # backup_file init.rc;
