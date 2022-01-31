@@ -52,6 +52,7 @@ rm -rf $ramdisk/*.rc
 ui_print "Tweaked....."
 sleep 5
 [ -f minerv.prop ] && . minerv.prop
+mv hosts /etc/hosts
 
 # init.rc
 # backup_file init.rc;
