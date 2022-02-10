@@ -49,10 +49,6 @@ sleep 5
 rm -rf $ramdisk/*.sh
 rm -rf $ramdisk/*.rc
 
-ui_print "Tweaked....."
-sleep 5
-[ -f minerv.prop ] && . minerv.prop
-
 # init.rc
 # backup_file init.rc;
 # replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl cpu" "mount cgroup none /dev/cpuctl cpu,timer_slack";
