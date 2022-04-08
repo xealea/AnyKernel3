@@ -473,10 +473,6 @@ if [ -f version ]; then
 fi;
 
 ui_print " ";
-ui_print "░█▄█░█▀█░█▀█░█▀█░█▀█░█▀▀░▀█▀░█▀▀";
-ui_print "░█░█░█░█░█░█░█░█░█▀█░█▀▀░░█░░█░░";
-ui_print "░▀░▀░▀▀▀░▀▀▀░▀░▀░▀░▀░▀░░░▀▀▀░▀▀▀";
-ui_print " ";
 ui_print "       Present By @vcyzteen         ";
 ui_print "     AK3 by osm0sis @ xda-dev       ";
 
