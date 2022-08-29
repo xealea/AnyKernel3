@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=xea-xo5 Kernel
+kernel.string=
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -47,7 +47,6 @@ fi;
 
 write_boot;
 ## end boot install
-
 
 # shell variables
 #block=vendor_boot;
